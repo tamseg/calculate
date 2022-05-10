@@ -7,6 +7,7 @@ function calculate(value1, value2, operator) {
         case 'divide': result = value1 / value2; break;
     }
     console.log(result);
+    return result;
 }
 
 module.exports = { calculate }
