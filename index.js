@@ -1,7 +1,7 @@
 const express = require("express");
 const { calculate } = require("./calculate");
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 app.get('/calc', (req, res) => {
     let value1 = parseInt(req.query.value1);
